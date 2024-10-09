@@ -23,9 +23,6 @@ public class Main {
 
     private static boolean checkForRotation(String originalString, String toBeChecked) {
         String concatenatedString = originalString + originalString;
-        if(concatenatedString.contains(toBeChecked)){
-            return true;
-        }
-        return false;
+        return concatenatedString.contains(toBeChecked);
     }
 }
