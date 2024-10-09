@@ -1,10 +1,5 @@
 package org.example;
 
-import java.util.HashMap;
-import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.Set;
-
 public class Main {
     public static void main(String[] args) {
         String s1 = "code";
