@@ -1,12 +1,24 @@
 package org.example;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 public class Main {
     public static void main(String[] args) {
-        String originalString = "code";
-        String subString = originalString.substring(1,3);
-        originalString = null;
+        System.out.println(findDuplicatesUsingFor("code decode"));
+    }
 
-        System.out.println(subString);
+    private static Set<Character> findDuplicatesUsingFor(String codeDecode) {
+        Set<Character> duplicates = new LinkedHashSet<>();
 
+        for(int i=0; i<codeDecode.length();i++){
+            for(int j=i+1; j<codeDecode.length();j++) {
+                if(codeDecode.charAt(i)==codeDecode.charAt(j)){
+                    duplicates.add(codeDecode.charAt(j));
+                }
+            }
+        }
+
+        return duplicates;
     }
 }
