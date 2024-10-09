@@ -14,13 +14,11 @@ public class Main {
 
     private static String rightRotate(String originalString, int r) {
         int partition = originalString.length() - r;
-        String rotatedString = originalString.substring(partition) + originalString.substring(0,partition) ;
-        return rotatedString;
+        return originalString.substring(partition) + originalString.substring(0,partition);
     }
 
     private static String leftRotate(String originalString, int r) {
-        String rotatedString = originalString.substring(r) + originalString.substring(0,r);
-        return rotatedString;
+        return originalString.substring(r) + originalString.substring(0,r);
     }
 
     private static boolean checkForRotation(String originalString, String toBeChecked) {
