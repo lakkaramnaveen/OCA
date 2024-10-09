@@ -4,7 +4,30 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        String originalString = "codedecode";
+        String originalString = "decode";
+        String toBeChecked = "decode";
+        int rotateCharacters = 6;
+        System.out.println(checkForRotation(originalString, toBeChecked));
+        System.out.println(leftRotate(originalString, rotateCharacters));
+        System.out.println(rightRotate(originalString, rotateCharacters));
+    }
 
+    private static String rightRotate(String originalString, int r) {
+        int partition = originalString.length() - r;
+        String rotatedString = originalString.substring(partition) + originalString.substring(0,partition) ;
+        return rotatedString;
+    }
+
+    private static String leftRotate(String originalString, int r) {
+        String rotatedString = originalString.substring(r) + originalString.substring(0,r);
+        return rotatedString;
+    }
+
+    private static boolean checkForRotation(String originalString, String toBeChecked) {
+        String concatenatedString = originalString + originalString;
+        if(concatenatedString.contains(toBeChecked)){
+            return true;
+        }
+        return false;
     }
 }
