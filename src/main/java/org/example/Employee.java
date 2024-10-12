@@ -2,11 +2,39 @@ package org.example;
 
 public class Employee {
     private int id;
-    private long salary;
+    private int age;
+    private String name;
+    private Address address;
 
-    public Employee(int id, long salary) {
+    public Employee(int id, int age, String name, Address address) {
         this.id = id;
-        this.salary = salary;
+        this.age = age;
+        this.name = name;
+        this.address = address;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public int getId() {
@@ -15,21 +43,5 @@ public class Employee {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public long getSalary() {
-        return salary;
-    }
-
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", salary=" + salary +
-                '}';
     }
 }
