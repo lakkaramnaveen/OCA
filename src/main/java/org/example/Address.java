@@ -29,4 +29,12 @@ public class Address implements Comparable<Address> {
     public int compareTo(Address o) {
         return this.getPincode() - o.getPincode();
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "streeName='" + streeName + '\'' +
+                ", pincode=" + pincode +
+                '}';
+    }
 }

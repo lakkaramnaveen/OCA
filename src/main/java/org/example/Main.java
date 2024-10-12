@@ -14,7 +14,14 @@ public class Main {
         Employee e4 = new Employee(4, 20, "min", new Address("Street4", 333));
         Employee e5 = new Employee(5, 21, "chin", new Address("Street3", 334));
 
+        List<Employee> employeeList = new ArrayList<>();
+        employeeList.add(e1);
+        employeeList.add(e2);
+        employeeList.add(e3);
+        employeeList.add(e4);
+        employeeList.add(e5);
 
 
+        System.out.println(employeeList);
     }
 }
