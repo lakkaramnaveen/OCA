@@ -1,11 +1,8 @@
 package org.example;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,9 +19,7 @@ public class Main {
         employeeList.add(e4);
         employeeList.add(e5);
 
-
         System.out.println(" Unsorted List "+employeeList);
-
 
         Collections.sort(employeeList, new AgeComparator());
         System.out.println(" Sorted list based on age "+employeeList);
