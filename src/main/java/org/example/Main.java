@@ -27,6 +27,6 @@ public class Main {
 
 
         Collections.sort(employeeList, new AgeComparator());
-        System.out.println(" Sorted base on age "+employeeList);
+        System.out.println(" Sorted list based on age "+employeeList);
     }
 }
