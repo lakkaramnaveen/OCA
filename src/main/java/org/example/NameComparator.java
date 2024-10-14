@@ -1,3 +1,7 @@
+package org.example;
+
+import org.example.Employee;
+
 import java.util.Comparator;
 public class NameComparator implements Comparator<Employee> {
     @Override
