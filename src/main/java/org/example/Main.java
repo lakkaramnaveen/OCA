@@ -23,15 +23,38 @@ public class Main {
 
         Collections.sort(employeeList, new AgeComparator());
         System.out.println(" Sorted list based on age "+employeeList);
+        String[] s = {"1","2","3","4"};
+        asa(s);
+        as(s);
     }
+
+    public static void asa(String[] main) {
+        for (int i = 1; i < main.length && i < 6; i = i + 2)
+            System.out.println(main[i]);
+    }
+
+
+    public static void as(String... arguments) {
+        int ctr = 0;
+        while (ctr < arguments.length) {
+            if (ctr >= 4) break;
+            if (ctr %2 != 0)
+                System.out.println(arguments[ctr]);
+            ++ctr;
+        }
+    }
+
+
+
 }
 
-class JavaCertQType5 {
-    private static void main() {
-        System.out.println("EJavaGuru.com");
-    }
+
+class JavaCertQType6 {
     public static void main(String... method) {
-        System.out.println("MissionOCAJ8");
-        //main();
-    }
+        main();
+        //main(method);
+        }
+        public static void main() {
+        System.out.println("EJavaGuru");
+        }
 }
