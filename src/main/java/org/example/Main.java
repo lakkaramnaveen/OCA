@@ -25,3 +25,13 @@ public class Main {
         System.out.println(" Sorted list based on age "+employeeList);
     }
 }
+
+class JavaCertQType5 {
+    private static void main() {
+        System.out.println("EJavaGuru.com");
+    }
+    public static void main(String... method) {
+        System.out.println("MissionOCAJ8");
+        //main();
+    }
+}
