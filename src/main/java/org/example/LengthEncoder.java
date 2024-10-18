@@ -20,5 +20,16 @@ public class LengthEncoder {
 
     public static void main(String[] args) {
         System.out.println(lengthEncoder("aaabbc"));
+
+        String str = new String("Zephyr");
+        int length = str.length();
+        System.out.println(length);
+        String[] st = str.split("");
+        for (String st1: st){
+            System.out.println(st1);
+        }
+        for(int i = length -1; i >= 0; i--) {
+            System.out.print(st[i] + ", ");
+        }
     }
 }
