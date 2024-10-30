@@ -13,7 +13,7 @@ public class Main {
         Predicate<String> p1 = s1 -> s1.length() % 2 == 0;
         System.out.println(p1.test("cod"));
 
-
-        System.out.println(p.and(p1).test("nani1"));
+        // Predicate Joining
+        System.out.println(p.and(p1).test("toyota"));
     }
 }
