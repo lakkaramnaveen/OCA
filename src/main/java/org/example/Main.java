@@ -15,5 +15,9 @@ public class Main {
 
         // Predicate Joining
         System.out.println(p.and(p1).test("toyota"));
+
+
+        // Function
+
     }
 }
