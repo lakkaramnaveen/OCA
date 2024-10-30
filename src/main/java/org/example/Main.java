@@ -3,6 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +27,9 @@ public class Main {
         String[] s = {"1","2","3","4"};
         asa(s);
         as(s);
+
+        Predicate<String> p = s1 -> s1.length() > 5;
+        System.out.println(p.test("code dfecode"));
     }
 
     public static void asa(String[] main) {
