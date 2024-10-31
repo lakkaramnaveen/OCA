@@ -16,5 +16,8 @@ public class Main {
         // Cube function
         Function<Integer, Integer> f1 = i -> i * i * i;
         System.out.println(f1.apply(2));
+
+        String name = "Shre /* ya */ Paul";
+        System.out.println(name);
     }
 }
