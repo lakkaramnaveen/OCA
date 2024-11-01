@@ -24,5 +24,6 @@ public class Stream1 {
         System.out.println(count);
 
         System.out.println(s1);
+        s1.forEach(s-> System.out.println(s));
     }
 }
