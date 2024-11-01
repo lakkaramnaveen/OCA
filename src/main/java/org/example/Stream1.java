@@ -2,7 +2,6 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Stream;
 
 public class Stream1 {
@@ -17,22 +16,6 @@ public class Stream1 {
         // Count
         Long count = list.stream().filter(n->n%2==0).count();
         // Sort
-        Stream<Integer> s1 = list.stream().filter(n->n%2==0).sorted();
-
-        Stream<Integer> s2 = list.stream().filter(n->n%2==0);
-
-
-        for(Integer i1: l1) {
-            System.out.println(i1);
-        }
-        System.out.println(count);
-
-        System.out.println(s1);
-        s1.forEach(s-> System.out.println(s));
-
-        Object[] o1 = s2.toArray();
-        for (Object o : o1) {
-            System.out.println(o);
-        }
+        list.stream().filter(n->n%2==0).sorted().forEach(s-> System.out.println(s));
     }
 }
