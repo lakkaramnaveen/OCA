@@ -23,8 +23,6 @@ public class Stream1 {
         }
         System.out.println(count);
 
-        for(Integer i1: s1) {
-            System.out.println(i1);
-        }
+        System.out.println(s1);
     }
 }
