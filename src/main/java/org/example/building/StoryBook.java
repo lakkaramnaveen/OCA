@@ -1,4 +1,6 @@
 package org.example.building;
 
-public class StoryBook {
+import org.example.library.Book;
+
+public class StoryBook extends Book {
 }

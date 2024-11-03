@@ -1,4 +1,4 @@
 package org.example.library;
 
-public class CourseBook {
+public class CourseBook extends Book{
 }
