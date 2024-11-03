@@ -10,7 +10,7 @@ public class StoryBook extends Book {
         package can’t access protected members of its base class using reference
         variables. */
 
-        String va=author;
+        String va = author;
         modifyTemplate();
     }
 }
