@@ -5,6 +5,8 @@ public class Main {
         int counter = 0;
         for (int i = 0; i < 100; i++) {
             System.out.println(i);
+            counter++;
         }
+        System.out.println(counter);
     }
 }
