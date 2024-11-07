@@ -42,5 +42,13 @@ public class Main {
 //        for (int a : ar){
 //            System.out.println(a);
 //        }
+
+        String text = null;
+        String result = switch (text) {
+            case null -> "Text is null";
+            case String s && s.length() > 5 -> "Long text";
+            default -> "Short text";
+        };
+        System.out.println(result);
     }
 }
