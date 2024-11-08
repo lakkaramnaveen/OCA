@@ -6,7 +6,7 @@ public class Main {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt();
-            print10(n);
+            print12(n);
         }
         static void print7(int n){
             for (int i = 0 ; i < n; i++ ) {
@@ -48,7 +48,8 @@ public class Main {
                 System.out.println();
             }
         }
-        static void print10(int n){
+        // 8, 9 together is 10
+        static void print11(int n){
             int start = 1;
             for (int i = 0; i < n; i++) {
                 if (i%2==0) start =1;
@@ -58,6 +59,25 @@ public class Main {
                     start = 1 - start;
                 }
                 System.out.println();
+            }
+        }
+        static void print12(int n){
+            int space = 2*(n-1);
+            for (int i = 1; i <= n; i++) {
+
+                for (int j = 1; j <= i ; j++) {
+                    System.out.print(j);
+                }
+
+                for (int j = 1; j <= space ; j++) {
+                    System.out.print(" ");
+                }
+
+                for (int j = i; j >= 1; j--) {
+                    System.out.print(j);
+                }
+                System.out.println();
+                space = space - 2;
             }
         }
 }
