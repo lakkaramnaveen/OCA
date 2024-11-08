@@ -6,7 +6,7 @@ public class Main {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt();
-            print15(n);
+            print16(n);
         }
         static void print7(int n){
             for (int i = 0 ; i < n; i++ ) {
@@ -106,4 +106,15 @@ public class Main {
                 System.out.println();
             }
         }
+        static void print16(int n){
+            char cha = 'A';
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(cha+"");
+                }
+                cha++;
+                System.out.println();
+            }
+        }
+
 }
