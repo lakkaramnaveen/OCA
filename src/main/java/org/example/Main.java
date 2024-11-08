@@ -6,7 +6,7 @@ public class Main {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt();
-            print14(n);
+            print15(n);
         }
         static void print7(int n){
             for (int i = 0 ; i < n; i++ ) {
@@ -93,6 +93,14 @@ public class Main {
         static void print14(int n){
             for (int i = 0; i < n; i++) {
                 for (char j = 'A'; j <= 'A'+i ; j++) {
+                    System.out.print(j+" ");
+                }
+                System.out.println();
+            }
+        }
+        static void print15(int n){
+            for (int i = 0; i < n; i++) {
+                for (char j = 'A'; j <= 'A'+(n-i-1) ; j++) {
                     System.out.print(j+" ");
                 }
                 System.out.println();
