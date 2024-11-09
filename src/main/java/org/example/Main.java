@@ -18,5 +18,12 @@ public class Main {
         static int x1 = 0;
         int count1() { return x1; }
 
+        static int x2 = result();
+        static int result() { return 20; }
+        int nonStaticResult() { return x2; }
+        int nonStaticResult1() { return result(); }
+
+
+
 
 }
