@@ -154,7 +154,23 @@ public class StriverPatterns {
             for (int j = 0; j < n-i; j++) {
                 System.out.print("*");
             }
-
+            System.out.println();
+        }
+        int iniS = 8;
+        for (int i = 1; i <= n; i++) {
+            //stars
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            //spaces
+            for (int j = 1; j <= iniS; j++) {
+                System.out.print(" ");
+            }
+            //stars
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            iniS -= 2;
             System.out.println();
         }
     }
