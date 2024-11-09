@@ -140,4 +140,22 @@ public class StriverPatterns {
             System.out.println();
         }
     }
+    static void print19(int n){
+        for (int i = 0; i < n; i++) {
+            //stars
+            for (int j = 0; j < n-i; j++) {
+                System.out.print("*");
+            }
+            //spaces
+            for (int j = 0; j < 2*i; j++) {
+                System.out.print(" ");
+            }
+            //stars
+            for (int j = 0; j < n-i; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
 }
