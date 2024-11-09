@@ -174,4 +174,7 @@ public class StriverPatterns {
             System.out.println();
         }
     }
+    static void print20(int n){
+
+    }
 }
