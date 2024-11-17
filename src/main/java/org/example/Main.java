@@ -7,10 +7,9 @@ public class Main {
         long population = 214748L;
         System.out.println(((Object) population).getClass().getSimpleName());
 
-        int baseDecimal = 267;
-        int octVal = 0413;
-        int hexVal = 0x10B;
-        int binVal = 0b100001011;
-
+        long baseDecimal = 100_267_760;
+        long octVal = 04_13;
+        long hexVal = 0x10_BA_75;
+        long binVal = 0b1_0000_10_11;
     }
 }
