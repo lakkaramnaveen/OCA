@@ -10,5 +10,8 @@ public class Main {
         long var6 = 0x1_0000_10;
         long var7 = 100__12_12;
         long binVal = 0b1_0000_10_11;
+
+        float n = 1.213f;
+        double d = 1.12121d;
     }
 }
