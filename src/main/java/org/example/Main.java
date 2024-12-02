@@ -2,13 +2,14 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        int i1 = 10;
-        int i2 = 20;
-        System.out.println(i1 >= i2);
-        long long1 = 10;
-        long long2 = 20;
-        System.out.println(long1 <= long2);
-        boolean flag = false;
-        System.out.println(!flag);
+        int a = 10;
+        int b = 20;
+        System.out.println(a == b);
+        System.out.println(a != b);
+        boolean b1 = false;
+        System.out.println(b1 == true);
+        System.out.println(b1 != true);
+        System.out.println(b1 == false);
+        System.out.println(b1 != false);
     }
 }
