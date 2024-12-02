@@ -2,9 +2,13 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        var a = 5;
-        var b = 0.5;
-        var c = a + b;
-        System.out.println(c instanceof Double);
+        int i1 = 10;
+        int i2 = 20;
+        System.out.println(i1 >= i2);
+        long long1 = 10;
+        long long2 = 20;
+        System.out.println(long1 <= long2);
+        boolean flag = false;
+        System.out.println(!flag);
     }
 }
