@@ -5,11 +5,13 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        int marks = 8;
-        int total = 10;
-        System.out.println(total < marks && ++marks > 5);
-        System.out.println(marks);
-        System.out.println(total < 12 || ++marks > 10);
-        System.out.println(marks);
+        int a = 10;
+        int b = 20;
+        int c = 40;
+        System.out.println(a++ > 10 || ++b < 30); // line1
+        System.out.println(a > 90 && ++b < 30);
+        System.out.println(!(c>20) && a==10 );
+        System.out.println(a >= 99 || a <= 33 && b == 10);
+        System.out.println(a >= 99 && a <= 33 || b == 10);
     }
 }
