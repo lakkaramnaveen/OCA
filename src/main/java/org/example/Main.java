@@ -11,3 +11,20 @@ public class Main {
         System.out.println(var3 == var4);
     }
 }
+
+
+// customer eligligit for additionaal banking product let's say a new credit card he want to applu
+//
+
+// Under what condition an account or user is eligible and ineligible for another product
+// What observations
+// recommencations
+
+
+// 1. if the account is not active and was acquired and had restriction "Not eligible"
+// 2. if the account is not active and was not acquired "Not eligible"
+// 3. if it is active and no restrictions and is not active "not eligible"
+
+
+// remove this piece of code
+// 
